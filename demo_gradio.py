@@ -26,8 +26,8 @@ from DPT.dpt.transforms import Resize, NormalizeImage, PrepareForNet
 Get ZeST Ready
 """
 base_model_path = "stabilityai/stable-diffusion-xl-base-1.0"
-image_encoder_path = "models/image_encoder"
-ip_ckpt = "sdxl_models/ip-adapter_sdxl_vit-h.bin"
+image_encoder_path = "IP-Adapter/models/image_encoder"
+ip_ckpt = "IP-Adapter/sdxl_models/ip-adapter_sdxl_vit-h.bin"
 controlnet_path = "diffusers/controlnet-depth-sdxl-1.0"
 device = "cuda"
 torch.cuda.empty_cache()
